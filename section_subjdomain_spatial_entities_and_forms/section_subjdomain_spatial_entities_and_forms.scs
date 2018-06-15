@@ -45,6 +45,9 @@ rrel_key_sc_element -> (section_subjdomain_spatial_entites_and_forms -> subjdoma
 	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_height)
 (*
 	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_diameter)
+(*
+	<- rrel_key_sc_element;;
 	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_elevation)
 (*
 	<- rrel_key_sc_element;;
@@ -74,4 +77,4 @@ rrel_key_sc_element -> (section_subjdomain_spatial_entites_and_forms -> subjdoma
 	<- rrel_key_sc_element;;
 	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_unit_mark)
 	(* <- rrel_key_sc_element;; *);;
-*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;

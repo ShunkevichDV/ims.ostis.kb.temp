@@ -25,6 +25,7 @@ subjdomain_spatial_entities_and_forms
 	nrel_distance;
 	nrel_thickness;
 	nrel_height;
+	nrel_diameter;
 	nrel_elevation;
 	nrel_start_point;
 	nrel_end_point;
@@ -176,6 +177,28 @@ nrel_height
 	[высота*]
 	(* <- lang_ru;; *);
 	[height*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_first_domain:
+	spatial_entity;
+=> nrel_second_domain:
+	segment;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			spatial_entity;
+			segment
+		};;
+	*);;
+
+nrel_diameter
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[диаметр*]
+	(* <- lang_ru;; *);
+	[diameter*]
 	(* <- lang_en;; *);
 <- binary_relation;
 => nrel_first_domain:
