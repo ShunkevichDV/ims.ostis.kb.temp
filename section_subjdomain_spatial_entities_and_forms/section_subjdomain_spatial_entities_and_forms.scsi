@@ -1,0 +1,349 @@
+subjdomain_spatial_entities_and_forms
+=> nrel_main_idtf:
+	[Предметная область пространственных сущностей и их форм]
+	(* <- lang_ru;; *);
+	[Subject domain of spatial entities and their forms]
+	(* <- lang_en;; *);
+<- subject_domain;
+<- sc_node_struct;
+<- structure;
+-> rrel_not_maximum_studied_object_class:
+	coordinate_system;
+	rectangular_coordinate_system;
+	two_dimensional_rectangular_coordinate_system;
+	three_dimensional_rectangular_coordinate_system;
+	point;
+	segment;
+	length;
+	level;
+	x_axis;
+	y_axis;
+	rectangle;
+-> rrel_explored_relation:
+	nrel_form;
+	nrel_origin_of_coordinates;
+	nrel_distance;
+	nrel_thickness;
+	nrel_height;
+	nrel_elevation;
+	nrel_start_point;
+	nrel_end_point;
+	nrel_limiting_point;
+	nrel_vertex;
+	nrel_unit_mark;;
+
+spatial_entity
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пространственная сущность]
+	(* <- lang_ru;; *);
+	[spatial entity]
+	(* <- lang_en;; *);;
+
+nrel_form
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[форма*]
+	(* <- lang_ru;; *);
+	[form*]
+	(* <- lang_en;; *);
+=> nrel_first_domain:
+	spatial_entity;;
+
+coordinate_system
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[система координат]
+	(* <- lang_ru;; *);
+	[coordinate system]
+	(* <- lang_en;; *);;
+
+rectangular_coordinate_system
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[декартова система координат]
+	(* <- lang_ru;; *);
+	[rectangular coordinate system]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[прямоугольная система координат]
+	(* <- lang_ru;; *);
+<= nrel_inclusion:
+	coordinate_system;;
+
+two_dimensional_rectangular_coordinate_system
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[двумерная декартова система координат]
+	(* <- lang_ru;; *);
+	[two-dimensional rectangular coordinate system]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	rectangular_coordinate_system;;
+
+three_dimensional_rectangular_coordinate_system
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[трёхмерная декартова система координат]
+	(* <- lang_ru;; *);
+	[three-dimensional rectangular coordinate system]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	rectangular_coordinate_system;;
+
+nrel_origin_of_coordinates
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[начало отсчёта*]
+	(* <- lang_ru;; *);
+	[origin of coordinates]
+	(* <- lang_en;; *);
+=> nrel_first_domain:
+	coordinate_system;
+=> nrel_second_domain:
+	point;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			coordinate_system;
+			point
+		};;
+	*);;
+
+point
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[точка]
+	(* <- lang_ru;; *);
+	[point]
+	(* <- lang_en;; *);;
+
+segment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[отрезок]
+	(* <- lang_ru;; *);
+	[segment]
+	(* <- lang_en;; *);;
+
+length
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[длина]
+	(* <- lang_ru;; *);
+	[length]
+	(* <- lang_en;; *);
+<- measurable_parameter;;
+
+nrel_distance
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[расстояние*]
+	(* <- lang_ru;; *);
+	[distance*]
+	(* <- lang_en;; *);
+=> nrel_second_domain:
+	length;
+<- quasybinary_relation;;
+
+nrel_thickness
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[толщина*]
+	(* <- lang_ru;; *);
+	[thickness*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_first_domain:
+	spatial_entity;
+=> nrel_second_domain:
+	segment;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			spatial_entity;
+			segment
+		};;
+	*);;
+
+nrel_height
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[высота*]
+	(* <- lang_ru;; *);
+	[height*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_first_domain:
+	spatial_entity;
+=> nrel_second_domain:
+	segment;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			spatial_entity;
+			segment
+		};;
+	*);;
+
+nrel_elevation
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[высотная отметка*]
+	(* <- lang_ru;; *);
+	[elevation*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_first_domain:
+	spatial_entity;
+=> nrel_second_domain:
+	segment;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			spatial_entity;
+			segment
+		};;
+	*);;
+
+nrel_start_point
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[начальная точка*]
+	(* <- lang_ru;; *);
+	[start point*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_first_domain:
+	spatial_entity;
+=> nrel_second_domain:
+	point;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			spatial_entity;
+			point
+		};;
+	*);;
+
+nrel_end_point
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[конечная точка*]
+	(* <- lang_ru;; *);
+	[end point*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_first_domain:
+	spatial_entity;
+=> nrel_second_domain:
+	point;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			spatial_entity;
+			point
+		};;
+	*);;
+
+level
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[уровень]
+	(* <- lang_ru;; *);
+	[level]
+	(* <- lang_en;; *);
+<- measurable_parameter;;
+
+x_axis
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[абсцисса]
+	(* <- lang_ru;; *);
+	[x-axis]
+	(* <- lang_en;; *);
+<- measurable_parameter;;
+
+y_axis
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[ордината]
+	(* <- lang_ru;; *);
+	[y-axis]
+	(* <- lang_en;; *);
+<- measurable_parameter;;
+
+rectangle
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[прямоугольник]
+	(* <- lang_ru;; *);
+	[rectangle]
+	(* <- lang_en;; *);;
+
+nrel_limiting_point
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[граничная точка*]
+	(* <- lang_ru;; *);
+	[limiting point*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_first_domain:
+	segment;
+=> nrel_second_domain:
+	point;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			segment;
+			point
+		};;
+	*);;
+
+nrel_vertex
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[вершина*]
+	(* <- lang_ru;; *);
+	[vertex*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_second_domain:
+	point;;
+
+nrel_unit_mark
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[единичная отметка*]
+	(* <- lang_ru;; *);
+	[unit mark*]
+	(* <- lang_en;; *);
+<- binary_relation;
+=> nrel_first_domain:
+	scale;
+=> nrel_second_domain:
+	point;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			scale;
+			point
+		};;
+	*);;

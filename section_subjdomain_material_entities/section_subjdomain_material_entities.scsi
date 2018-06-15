@@ -1,0 +1,42 @@
+subjdomain_material_entities
+=> nrel_main_idtf:
+	[Предметная область материальных сущностей]
+	(* <- lang_ru;; *);
+	[Subject domain of material entities]
+	(* <- lang_en;; *);
+<- subject_domain;
+<- sc_node_struct;
+<- structure;
+-> rrel_maximum_studied_object_class: 
+	material_entity;
+-> rrel_not_maximum_studied_object_class:
+	density;
+	mass;
+	temperature;;
+
+density
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[плотность]
+	(* <- lang_ru;; *);
+	[density]
+	(* <- lang_en;; *);
+<- measurable_parameter;;
+
+mass
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[масса]
+	(* <- lang_ru;; *);
+	[mass]
+	(* <- lang_en;; *);
+<- measurable_parameter;;
+
+temperature
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[температура]
+	(* <- lang_ru;; *);
+	[temperature]
+	(* <- lang_en;; *);
+<- measurable_parameter;;

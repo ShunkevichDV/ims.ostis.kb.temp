@@ -1,0 +1,27 @@
+section_subjdomain_material_entities
+=> nrel_main_idtf:
+	[Раздел. Предметная область материальных сущностей]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of material entities]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subjdomain_material_entities = [*^"file://section_subjdomain_material_entities.scsi"*];;
+
+rrel_key_sc_element -> (section_subjdomain_material_entities -> subjdomain_material_entities)
+(*
+	=> nrel_key_sc_element_order: (section_subjdomain_material_entities -> material_entity)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_material_entities -> density)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_material_entities -> mass)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_material_entities -> temperature)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;
+
+

@@ -1,0 +1,77 @@
+section_subjdomain_spatial_entites_and_forms
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subjdomain_spatial_entites_and_forms = [*^"file://section_subjdomain_spatial_entities_and_forms.scsi"*];;
+
+rrel_key_sc_element -> (section_subjdomain_spatial_entites_and_forms -> subjdomain_spatial_entities_and_forms)
+(*
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> spatial_entity)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_form)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> coordinate_system)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> rectangular_coordinate_system)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> two_dimensional_rectangular_coordinate_system)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> three_dimensional_rectangular_coordinate_system)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_origin_of_coordinates)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> point)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> segment)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> length)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_distance)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_thickness)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_height)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_elevation)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_start_point)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_end_point)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> level)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> x_axis)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> y_axis)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> rectangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_limiting_point)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_vertex)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_unit_mark)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;
