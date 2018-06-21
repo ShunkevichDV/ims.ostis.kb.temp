@@ -5,5 +5,6 @@ ui_menu_na_search_extended <- ui_user_command_class_noatom;
 {
 	ui_menu_search_all_part_of_given_classes;
         ui_menu_search_all_part_of_given_classes_of_given_entity;
-        ui_menu_search_all_part_of_given_class_of_given_entity
+        ui_menu_search_all_part_of_given_class_of_given_entity;
+        ui_menu_count_all_part_of_given_classes
 };;

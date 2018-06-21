@@ -1,0 +1,30 @@
+ui_menu_count_all_part_of_given_classes <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_two_argument_command_class;;
+
+ui_menu_count_all_part_of_given_classes 
+=> nrel_main_idtf: 
+	[Сколько частей заданных сущностей являются элементами одного из заданных классов?]
+	(* <- lang_ru;; *);;
+
+ui_menu_count_all_part_of_given_classes
+=> nrel_main_idtf: 
+	[How many parts of given entities are elements of given classes?] 
+	(* <- lang_en;; *);;
+
+ui_menu_count_all_part_of_given_classes => ui_nrel_command_template:
+	[*
+		question_count_all_part_of_given_classes _-> .._question_search_all_part_of_given_classes_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;
+				_-> rrel_2:: ui_arg_2;;
+			*);;
+		.._question_search_all_part_of_given_classes_instance _<- question;;
+	*];;
+
+ui_menu_count_all_part_of_given_classes => ui_nrel_command_lang_template: 
+	[Сколько частей сущностей из $ui_arg_1 являются элементами одного из классов, входящих в $ui_arg_2?]
+		(* <- lang_ru;; *);;
+
+ui_menu_count_all_part_of_given_classes => ui_nrel_command_lang_template: 
+	[How many parts of entities from $ui_arg_1 are elements of classes from $ui_arg_2?] 
+		(* <- lang_en;; *);;
+
