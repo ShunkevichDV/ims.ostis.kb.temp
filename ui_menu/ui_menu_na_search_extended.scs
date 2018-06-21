@@ -1,0 +1,9 @@
+ui_menu_na_search_extended <- ui_user_command_class_noatom;
+=> nrel_main_idtf: [Команды расширенного поиска] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Commands of extended search] (* <- lang_en;; *);
+<= nrel_ui_commands_decomposition:
+{
+	ui_menu_search_all_part_of_given_classes;
+        ui_menu_search_all_part_of_given_classes_of_given_entity;
+        ui_menu_search_all_part_of_given_class_of_given_entity
+};;
