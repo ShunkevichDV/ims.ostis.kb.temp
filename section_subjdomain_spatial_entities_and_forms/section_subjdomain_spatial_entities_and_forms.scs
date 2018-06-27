@@ -33,6 +33,9 @@ rrel_key_sc_element -> (section_subjdomain_spatial_entites_and_forms -> subjdoma
 	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> segment)
 (*
 	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> plane)
+(*
+	<- rrel_key_sc_element;;
 	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> length)
 (*
 	<- rrel_key_sc_element;;
@@ -43,6 +46,12 @@ rrel_key_sc_element -> (section_subjdomain_spatial_entites_and_forms -> subjdoma
 (*
 	<- rrel_key_sc_element;;
 	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_height)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_width)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_length)
 (*
 	<- rrel_key_sc_element;;
 	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_diameter)
@@ -76,5 +85,17 @@ rrel_key_sc_element -> (section_subjdomain_spatial_entites_and_forms -> subjdoma
 (*
 	<- rrel_key_sc_element;;
 	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_unit_mark)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_opening)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> opening)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_section)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_spatial_entites_and_forms -> nrel_horizontal_section)
 	(* <- rrel_key_sc_element;; *);;
-*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;
